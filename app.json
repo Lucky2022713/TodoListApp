@@ -1,0 +1,61 @@
+{
+  "expo": {
+    "name": "todoList",
+    "slug": "todoList",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "edgeToEdgeEnabled": true,
+      "permissions": [
+        "android.permission.RECORD_AUDIO",
+        "android.permission.MODIFY_AUDIO_SETTINGS"
+      ],
+      "package": "com.kadyo.todoList"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "expo-audio",
+      "expo-video",
+      "expo-asset",
+      [
+        "expo-updates",
+        {
+          "enabled": true,
+          "checkAutomatically": "ON_LOAD",
+          "fallbackToCacheTimeout": 0
+        }
+      ]
+    ],
+    "updates": {
+      "url": "https://u.expo.dev/fd50109a-5c1f-4241-a2f0-058b8822f7f3",
+      "fallbackToCacheTimeout": 0
+    },
+    "runtimeVersion": "1.0.0",
+    "assetBundlePatterns": [
+      "assets/alert.mp3",
+      "**/*"
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "fd50109a-5c1f-4241-a2f0-058b8822f7f3"
+      }
+    }
+  }
+}
